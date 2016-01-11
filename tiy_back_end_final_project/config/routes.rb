@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'platforms' => 'platforms#index'
+  resources :platforms do
+    resources :tips
+  end
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

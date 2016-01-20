@@ -14,9 +14,9 @@
 
 	<div class="row">
 		<div class="btn-group col-xs-4 col-xs-offset-5" role="group" aria-label="...">
-			<button type="button" class="btn btn-success">PS4</button>
-			<button type="button" class="btn btn-warning">XBOX ONE</button>
-			<button type="button" class="btn btn-danger">PC</button>
+			<%= link_to @platforms[:PS4].title, platform_games_path(@platforms[:PS4]), class: "btn btn-success" %>
+			<%= link_to @platforms[:XBOX_ONE].title, platform_games_path(@platforms[:XBOX_ONE]), class: "btn btn-warning" %>
+			<%= link_to @platforms[:PC].title, platform_games_path(@platforms[:PC]), class: "btn btn-danger" %>
 		</div>
 	</div>
 </div>

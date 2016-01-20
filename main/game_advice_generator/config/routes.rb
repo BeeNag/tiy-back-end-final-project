@@ -1,6 +1,21 @@
 Rails.application.routes.draw do
 
-  get 'platforms' => 'platforms#index'
+  root 'platforms#index'
+
+  get 'platforms/:platform_id/games' => 'games#index', as: :platform_games
+  get 'platforms/:platform_id/games/:id/show' => 'games#show', as: :platform_game
+
+  get 'games/:game_id/tips' => 'tips#index', as: :game_tips
+
+  # resources :teams do 
+  #   resources :players
+  # end
+    
+  # resources :platforms do
+  #   resources :games do
+  #     resources :tips
+  #   end
+  # end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

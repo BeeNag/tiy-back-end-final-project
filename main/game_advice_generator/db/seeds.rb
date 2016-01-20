@@ -1,7 +1,37 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Game.create!([
+  {title: "Fallout 4", platform_id: 1},
+  {title: "The Witcher 3: Wild Hunt", platform_id: 1},
+  {title: "Destiny", platform_id: 1},
+  {title: "Metal Gear Solid V: The Phantom Pain", platform_id: 1},
+  {title: "Bloodborne", platform_id: 1},
+  {title: "Dragon Age: Inquisition", platform_id: 1},
+  {title: "Call of Duty: Black Ops III", platform_id: 1},
+  {title: "Dragon Ball: Xenoverse", platform_id: 1},
+  {title: "Star Wars Battlefront", platform_id: 1},
+  {title: "Batman: Arkham Knight", platform_id: 1},
+  {title: "Fallout 4", platform_id: 2},
+  {title: "Destiny", platform_id: 2},
+  {title: "Call of Duty: Black Ops III", platform_id: 2},
+  {title: "Star Wars Battlefront", platform_id: 2},
+  {title: "The Elder Scrolls Online: Tamriel Unlimited", platform_id: 2},
+  {title: "The Witcher 3: Wild Hunt", platform_id: 2},
+  {title: "Dragon Age: Inquisition", platform_id: 2},
+  {title: "Halo 5: Guardians", platform_id: 2},
+  {title: "Rise of the Tomb Raider", platform_id: 2},
+  {title: "Tom Clancy's Rainbow Six Siege", platform_id: 2},
+  {title: "The Elder Scrolls V: Skyrim", platform_id: 3},
+  {title: "League of Legends", platform_id: 3},
+  {title: "Fallout 4", platform_id: 3},
+  {title: "Final Fantasy XIV Online: A Realm Reborn", platform_id: 3},
+  {title: "World of Warcraft", platform_id: 3},
+  {title: "Diablo III", platform_id: 3},
+  {title: "The Witcher 3: Wild Hunt", platform_id: 3},
+  {title: "Undertale", platform_id: 3},
+  {title: "Minecraft", platform_id: 3},
+  {title: "Hearthstone: Heroes of Warcraft", platform_id: 3}
+])
+Platform.create!([
+  {title: "PS4"},
+  {title: "XBOX ONE"},
+  {title: "PC"}
+])

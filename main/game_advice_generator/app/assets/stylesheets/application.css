@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ .landing-page-background {
+  	height: 100%;
+  	background: url(Landing_Page_Background.jpg) no-repeat center center;
+  	background-size: cover;
+ }
+ 
+ .text-center {
+  	color: white;
+ }
+ 
+ .random-tip {
+	color: white;
+ }

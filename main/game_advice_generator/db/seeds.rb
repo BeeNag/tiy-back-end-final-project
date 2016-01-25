@@ -35,3 +35,24 @@ Platform.create!([
   {title: "XBOX ONE"},
   {title: "PC"}
 ])
+Tip.create!([
+  {body: "Use the Quick Inventory Menu", game_id: 1},
+  {body: "Holster Your Weapon to Run Faster", game_id: 1},
+  {body: "Sleep to Regenerate Health", game_id: 1},
+  {body: "Power Armor Can Be Stolen", game_id: 1},
+  {body: "Return Overdue Library Books", game_id: 1},
+  {body: "Get More Quest XP", game_id: 1},
+  {body: "Keep Your Companion's First Weapon", game_id: 1},
+  {body: "Certain Clothes Provide Better Vendor Rates", game_id: 1},
+  {body: "Sort Items In Your Pip-Boy", game_id: 1},
+  {body: "Plan your travels by looking for Fast Travel signposts on the world map", game_id: 2},
+  {body: "Make sure you make a regular manual saves", game_id: 2},
+  {body: "Selecting targets will help you to focus on one enemy at a time to thin out groups, but make sure you keep moving", game_id: 2},
+  {body: "Keep your strength up", game_id: 2},
+  {body: "Look out for Places of Power", game_id: 2},
+  {body: "Pick the right class", game_id: 3},
+  {body: "Team up", game_id: 3},
+  {body: "Aim for the head", game_id: 3},
+  {body: "Don't just shoot", game_id: 3},
+  {body: "Pick up your loot", game_id: 3}
+])

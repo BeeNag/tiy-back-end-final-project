@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'tips/index'
+
   root 'platforms#index'
 
   get 'platforms/:platform_id/games' => 'games#index', as: :platform_games

@@ -1,0 +1,31 @@
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="text-center">These are the tips available for <%= @game.title %> on <%= @platform.title %><br /><small>You can add a tip if you feel like there is anything missing!</small></h1>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<table class="table table-hover table-bordered table-striped text-center">
+				<thead>
+					<tr>
+						<th class="text-center">Tips</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% @tips.each do |tip| %>
+					<tr>
+						<td><%= tip.body %></td>
+					</tr>
+					<% end %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-2">
+			<a role="button" class="btn btn-info" href="/">Back to Home Page</a>
+		</div>
+		<div class="col-xs-4 col-xs-offset-2">
+			<a role="button" class="btn btn-info" href="<%= platform_games_path(@game) %>">Return to Games</a>
+		</div>
+	</div>
+</div>

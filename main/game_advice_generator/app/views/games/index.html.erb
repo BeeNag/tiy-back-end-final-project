@@ -1,13 +1,13 @@
 <div class="container-fluid">
 	<div class="row">
-		<h1 class="text-center">Here are the <%= @games.count %> games available for ""<br /><small>There are "" tips for these games</small></h1>
+		<h1 class="text-center">Here are the <%= @games.count %> games available for <%= @platform.title %><br /><small>There are "" tips for these games</small></h1>
 	</div>
 	<div class="row">
-		<div class="col-xs-6 col-offset-3">
-			<table border="2px solid black">
+		<div class="col-xs-6">
+			<table class="table table-hover table-bordered table-striped text-center">
 				<thead>
 					<tr>
-						<th>Title</th>
+						<th class="text-center">Title</th>
 					</tr>
 				</thead>
 				<tbody>

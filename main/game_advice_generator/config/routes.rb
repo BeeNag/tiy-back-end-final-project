@@ -5,13 +5,18 @@ Rails.application.routes.draw do
   root 'platforms#index'
 
   get 'platforms/:platform_id/games' => 'games#index', as: :platform_games
-  get 'platforms/:platform_id/games/:id/show' => 'games#show', as: :platform_game
+  # get 'platforms/:platform_id/games/:id/new' => 'games#new', as: :platform_game
+  post 'platforms/:platform_id/games' => 'games#create'
+  get 'platforms/:platform_id/games/new' => 'games#new', as: :new_platform_game
 
   get 'games/:game_id/tips' => 'tips#index', as: :game_tips
 
-  # resources :teams do 
-  #   resources :players
-  # end
+  post '/tips' => 'tips#create', as: :tips
+  get 'tips/new' => 'tips#new', as: :new_tip
+
+  resources :teams do
+    resources :players
+  end
     
   # resources :platforms do
   #   resources :games do

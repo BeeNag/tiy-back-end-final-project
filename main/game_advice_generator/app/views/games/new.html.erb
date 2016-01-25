@@ -1,0 +1,16 @@
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="text-center">Add a new game</h1>
+	</div>
+	<div class="row">
+		<%= form_for [@platform, @game] do |f| %>
+			<p>
+				<%= f.label :title %>
+				<%= f.text_field :title, autofocus: true %>
+			</p>
+			<p>
+				<%= f.submit 'Submit', class: 'btn btn-primary' %>
+			</p>
+		<% end %>
+	</div>
+</div>

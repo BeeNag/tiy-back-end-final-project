@@ -21,11 +21,14 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-4 col-xs-offset-2">
+		<div class="col-xs-3 col-xs-offset-1">
 			<a role="button" class="btn btn-info" href="/">Back to Home Page</a>
 		</div>
-		<div class="col-xs-4 col-xs-offset-2">
-			<a role="button" class="btn btn-info" href="<%= platform_games_path(@game) %>">Return to Games</a>
+		<div class="col-xs-3 col-xs-offset-1">
+			<a role="button" class="btn btn-info" href="<%= platform_games_path(@platform, @game) %>">Return to Games</a>
+		</div>
+		<div class="col-xs-3 col-xs-offset-1">
+			<p><a class="btn btn-info" href="<%= new_game_tip_path(@game, @tip) %>" role="button">Add a New Tip</a></p>
 		</div>
 	</div>
 </div>

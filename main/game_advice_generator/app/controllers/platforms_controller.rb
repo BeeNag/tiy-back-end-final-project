@@ -5,6 +5,8 @@ class PlatformsController < ApplicationController
 		@platforms[:PS4] = Platform.find_by title: "PS4"
 		@platforms[:XBOX_ONE] = Platform.find_by title: "XBOX ONE"
 		@platforms[:PC] = Platform.find_by title: "PC"
+
+		@tip = Tip.order("RANDOM()").first
 	end
 
 end

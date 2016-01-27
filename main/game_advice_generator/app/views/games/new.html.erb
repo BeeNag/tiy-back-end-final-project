@@ -2,15 +2,15 @@
 	<div class="row">
 		<h1 class="text-center">Add a new game</h1>
 	</div>
-	<div class="row text-center">
+	<div class="form-group text-center">
 		<%= form_for [@platform, @game] do |f| %>
-			<p>
+			<div class="col-xs-6">
 				<%= f.label :title %>
-				<%= f.text_field :title, autofocus: true %>
-			</p>
-			<p>
-				<%= f.submit 'Submit', class: 'btn btn-primary' %>
-			</p>
+				<%= f.text_field :title, autofocus: true, class: 'form-control' %>
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 submit-button">
+				<%= f.submit 'Submit', class: 'btn btn-primary form-control' %>
+			</div>
 		<% end %>
 	</div>
 </div>
